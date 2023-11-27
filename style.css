@@ -1,0 +1,1178 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Bebas+Neue&family=Kanit:wght@400;500;600;700&display=swap");
+
+body {
+  background-color: #111111;
+  color: white;
+  background-attachment: fixed;
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #000000;
+  --primary-dark-color: #100f10;
+  --Secondary-dark-color: #363636;
+  --primary-background-color: #32de84;
+  --secondary-background-color: #4fffb0;
+  --ternary-background-color: #00fa9a;
+  --primary-font-family: "Kanit", sans-serif;
+  --secondary-font-family: "Archivo Narrow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* img {
+    mix-blend-mode: multiply;
+  } */
+
+/* utility classes */
+
+.tagline{
+  margin-top: 30px;
+}
+
+.h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+
+.text-style{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.max-width {
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+.margin {
+  margin: 30px;
+}
+
+.margin-top{
+  margin-top: 3rem;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.color-light {
+  color: white;
+}
+
+.color-dark {
+  color: #000000;
+}
+
+.border-style-h:hover {
+  position: relative;
+}
+
+.border-style:hover::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid var(--secondary-background-color); /* Border for the centered line */
+}
+
+/* Controll Content Section here (You can vanish entire page)*/
+
+
+/* main code start here */
+
+
+
+.banner {
+  background-color: rgb(48, 182, 104);
+  color: #cecece;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.head {
+  height: 100%;
+  width: 100%;
+}
+
+/* Navigation start here */
+.logo {
+  height: 20px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.collection {
+  margin-right: 10px;
+}
+
+.nav {
+  flex-direction: row;
+  gap: 35%;
+  margin-top: 10px;
+}
+
+.links {
+  flex-direction: row;
+}
+
+.link-item {
+  display: inline;
+  font-family: var(--primary-font-family);
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-dark-color);
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  z-index: 1;
+  font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item a:hover  {
+  color: var(--ternary-background-color);
+}
+
+/* navigation end here */
+
+/* Hero section Start here */
+
+.head-hero h1 {
+  font-size: 7rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.head-hero h2 {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.head-hero h3 {
+  margin-left: 1rem;
+}
+
+.eff {
+  color: #00fa9a;
+}
+
+.head-hero {
+  flex-direction: row;
+}
+
+.hero-text {
+  margin: -20px 30px 30px 30px;
+  padding: 20px;
+  font-family: var(--primary-font-family);
+}
+
+.hero-img {
+  margin: 20px;
+}
+
+.hero-btn {
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 12vw;
+  height: 7vh;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  margin-top: 30px;
+  margin-left: 2rem;
+}
+
+.hero-btn:hover {
+  background-color: var(--secondary-background-color);
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Hero section End here */
+
+
+/* Features section Start here */
+
+.feature-items{
+  margin-top: 30px; 
+  flex-direction: row;
+}
+
+.f-item{
+  background-color: #141414;
+  width: 350px;
+  height: 500px;
+  margin: 20px;
+  padding: 30px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+/* these are the hover section */
+
+.f-item:hover {
+  background-color: var(--primary-background-color);
+}
+
+.f-item:hover .f-img span i,
+.f-item:hover p{
+  color: white; 
+}
+
+.f-item:hover .f-btn{
+  background-color: #e0e0e0;
+}
+
+.f-item::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid var(--primary-background-color); 
+}
+
+.f-img{
+  height: 100px;
+  width: 100px;
+  color: var(--primary-background-color);
+  border-radius: 50%;
+  font-size: 40px;
+  background-color: #1f1f1f;
+  margin-bottom: 10px;
+}
+
+.f-text h2{
+  font-size: 24px;
+  margin: 30px;
+}
+
+.f-text p{
+  color: #757575;
+  font-size: 15px;
+}
+
+.f-btn{
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #4fffb0;
+  width: 12vw;
+  height: 7vh;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* Features section End here */
+
+
+/* About section start here */
+.about-us{
+  background-color: var(--primary-background-color);
+}
+
+.about{
+  margin-top: 4rem;
+}
+
+.about-item{
+  flex-direction: row;
+}
+
+.about-img{
+  margin: 0px 0px 0px 40px;
+ 
+}
+.about-text{
+  margin: 20px;
+  padding: 10px;
+}
+.about-text h1 { 
+  font-size: 4rem;
+  margin: 20px;
+}
+
+.about-text p {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 20px;
+  text-align: start;
+}
+
+/* About section End here */
+
+
+/* try now section start here */
+
+.try-now{
+ margin-top: 4rem;
+}
+
+.try-now-free , .try-now-pro , .pro-temp{
+  flex-direction: row;
+  margin: 20px;
+}
+
+.try-img{
+  background-color: #1f1f1f;
+  margin: 10px;
+  padding: 30px;
+  position: relative;
+}
+
+.overlay-text{
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f73b3b; 
+  color: white;
+  padding: 10px;
+}
+
+.try-img:hover{
+  background-color: #303030;
+}
+
+.try-img:hover .overlay-text{
+  display: block;
+}
+
+.pro-tag{
+  position: absolute;
+  top: 12%;
+  left: 82%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  background-color: #f73b3b; 
+  color: white; 
+  padding: 15px;
+  padding-left: 25px;
+}
+
+/* try now section End here */
+
+
+/* Review section start here */
+
+.customer-review{
+  background-color: var(--primary-background-color); 
+  margin-top: 2rem;
+}
+
+.customer{
+  padding: 20px;
+  flex-direction: row;
+}
+
+.cust-review {
+  flex-direction: row;
+  background-color: #1f1f1f;
+  margin: 20px;
+  padding: 11px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.cust-review:hover {
+  background-color: #3a3a3a;
+}
+
+.cust-review span{
+  font-size: 30px;
+  color: var(--secondary-background-color);
+}
+
+.cust-img{
+  padding: 10px;
+}
+
+.cust-comment{
+  font-size: 17px;
+  font-family: var(--primary-font-family);
+  color: #cecece;
+}
+
+.cust-name{
+  margin: 10px 10px 0px 10px;
+  color: var(--secondary-background-color);
+  font-size: 20px;
+}
+
+.cust-proffsion{
+  margin-left: 10px;
+  color: #757575;
+  font-style: italic;
+}
+
+/* Review section End here */
+
+/* Contact-us section start here */
+
+.comunication{
+  box-shadow: 10px 10px 21px #181818,
+  -10px -10px 21px #202020;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.comunication label{
+  display: block;
+}
+
+.con-form{
+  justify-content: start;
+  align-items: start;
+  margin-top: 30px;
+  padding: 30px;
+  font-family: var(--secondary-font-family);
+}
+
+.con-form input {
+  height: 35px;
+  width: 100%;
+  color: #8b8b8b;
+  background-color: transparent;
+  margin: 15px 0px 20px 0px;
+  padding: 0 0 0 10px;
+}
+
+.con-form input:focus{
+  border-bottom: 1px solid var(--secondary-background-color);
+}
+
+.info {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid white;
+}
+
+#myButton{
+ background-color: #8b8b8b;
+ color: #e0e0e0;
+}
+
+#myButton:hover {
+  background-color: var(--primary-background-color);
+  letter-spacing: 2px;
+}
+
+#message {
+  background-color: transparent;
+  padding: 10px;
+  color: #8b8b8b;
+  margin-top: 10px;
+}
+
+/* Contact-us section End here */
+
+
+/* FAQ section start here */
+
+.faq-btn{
+  height: 50px;
+  width: 300px;
+  font-size: 25px;
+  margin: 4rem;
+  background-color: #e72626;
+  border: none;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  transition: ease-in-out;
+  cursor: pointer;
+}
+
+.faq-btn:hover{
+  background-color: #ee5454;
+}
+
+/* FAQ section End here */
+
+
+/* Footer section start here */
+
+.foot{
+  background-color: var(--primary-background-color);
+  font-family: var(--primary-font-family);
+}
+
+.footer{
+  padding: 20px;
+  color: #f7f4fa;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 30vh;
+  flex-direction: row;
+}
+
+.footer-img img {
+  height: 5vh;
+  width: auto;
+  margin: 30px;
+  mix-blend-mode: normal;
+}
+
+.img-txt {
+  font-size: 22px;
+  font-weight: 450;
+  margin: 30px;
+  margin-top: -25px;
+}
+
+.link-column h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.link-column h5 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #f7f4fa;
+  margin-top: 10px;
+}
+
+.link-column a {
+  display: block;
+  margin-top: 10px;
+  color: #f7f4fa;
+}
+
+.link-column {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.link:hover {
+  color: var(--primary-dark-color);
+}
+
+/* sub-footer section // end of page */
+
+.sub-foot{
+  background-color: #080808;
+  font-family: var(--primary-font-family);
+}
+
+.sub-footer {
+  justify-content: space-between;
+  
+  font-size: 16px;
+  height: 10vh;
+  flex-direction: row;
+}
+
+.copyright {
+  margin: 20px;
+}
+
+.link-row .link{
+  gap: 30px;
+  margin: 20px;
+}
+
+.media-icon {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.sub-footer .link:hover{
+  color: var(--secondary-background-color);
+}
+
+/* Footer section End here */
+
+
+/* Section which display after interaction click here */
+
+/* FAQ section start here */
+
+.frequently{
+  display: none;
+}
+
+.question{
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ques-ans{
+  margin: 20px;
+  padding: 20px 0px 1px 0px;
+  width: 50rem;
+  background-color: #242424;
+  cursor: pointer;
+}
+
+.ques-ans:focus .ans{
+  display: block;
+  z-index: 2;
+}
+
+.ques-ans:hover{
+  background-color: var(--primary-background-color);
+}
+
+.ques{
+  margin: 0px 20px 20px 20px;
+}
+
+.ans{
+  display: none;
+  margin-top: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: #6e6e6e;
+}
+
+/* FAQ section end here */
+
+/* Card designing section start here */
+
+.creator{
+  display: none;
+}
+
+.items{
+  padding: 10px;
+  font-size: 30px;
+  height: 75rem;
+  gap: 68%;
+  min-width: 5%;
+  background-color: #181818;
+}
+
+.items i{
+  margin-top: 20px;
+}
+.items span:hover{
+  color: var(--secondary-background-color);
+}
+
+.designer{
+  margin: 10px;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.details{
+  margin: 10px; 
+  height: 75rem;
+}
+
+
+/* user and company details */
+
+.details{
+  background-color: #181818;
+  padding: 20px;
+  width: 50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.user , .company{
+  justify-content: start;
+  align-items: start;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: var(--secondary-font-family);
+}
+
+.details h2{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.details input{
+  width: 100%;
+  color: #8b8b8b;
+  background-color: transparent;
+  margin: 15px 0px 20px 0px;
+  padding: 0 0 10px 10px;
+}
+
+.details input:focus{
+  border-bottom: 1px solid var(--secondary-background-color);
+}
+
+.info {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid white;
+}
+
+#user-link-btn {
+ background-color: #8b8b8b;
+ color: #e0e0e0;
+ width: 50%;
+ height: 2rem;
+ padding: 1px;
+ border: none;
+ align-self: center;
+}
+
+#user-link-btn:hover {
+  background-color: var(--primary-background-color);
+}
+
+/* Design color pallet */
+
+.design{
+  height: 15rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.c-design{
+  display: flex;
+  height: 6rem;
+  width: 100%;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.colour{
+  height: 4rem;
+  width: 25%;
+  margin: 10px;
+}
+
+#red{
+  background-color: rgb(243, 106, 106);
+}
+#blue{
+  background-color: rgb(112, 196, 245);
+}
+#dark{
+  background-color: rgb(31, 31, 31);
+}
+#purpel{
+  background-color: rgb(160, 28, 160);
+}
+#green{
+  background-color: #73f7c4;
+}
+#pink{
+  background-color: #dda1ff;
+}
+#light{
+  background-color: #fafffd;
+  color: #000;
+}
+#maron{
+  background-color: #4b215f;
+}
+
+/* Card Designing */
+
+.cards{
+  width: 40%;
+  height: 75rem;
+}
+
+.busy-card{
+  padding: 10px;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.card{
+  height: 40rem;
+  width: 100%;
+  position: relative;
+}
+
+.card-front img{
+ mix-blend-mode: color-dodge;
+}
+
+.card .card-front, .card-back{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0; top: 0;
+  background-color: #181818;
+  backface-visibility: hidden;
+  transition: 0.4s ease-in-out;
+  border-radius: 20px;
+}
+
+.card .card-front{
+  text-align: center;
+  text-transform: uppercase;
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.card .card-back{
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+/* card-user-Details */
+
+.card-back{
+  flex-direction: row;
+}
+.card-user{
+  width: 22rem;
+  font-family: var(--primary-font-family);
+  padding: 30px;
+}
+
+.card-user-name{
+  font-size: 23px;
+  margin: 0px 10px 20px 0px;
+  text-transform: uppercase;
+}
+
+.card-user-position{
+  font-size: 18px;
+  margin: 0px 10px 30px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-user lable{
+  font-size: 20px;
+}
+
+.card-user i{
+  margin: 10px;
+  margin-left: 0;
+  font-size: 25px;
+}
+
+.card-user-email, .card-user-contact, .card-user-location{
+  font-size: 15px;
+  margin: 10px;
+}
+
+.stripe{
+  background: #000;
+  width: 15%;
+  margin: 20px 0;
+  height: 100%;
+}
+
+.card-user-link{
+  flex-direction: row;
+  margin-top: 4rem;
+}
+
+.card-user-link i {
+  font-size: 2rem;
+  margin: 10px
+}
+
+.flip-btn{
+  background-color: var(--primary-background-color);
+  color: #e0e0e0;
+  width: 30%;
+  height: 2rem;
+  padding: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  margin-top: 3rem;
+  margin-left: 35%;
+}
+
+ .flip-btn:hover {
+   background-color: var(--secondary-background-color);
+ }
+
+/* Card designing section end here */
+
+/* Card ordering section start here */
+
+.ordering{
+  margin-bottom: 3rem;
+  display: none;
+}
+.order-box{
+  width: 100%;
+  height: 40rem;
+  margin: 2rem;
+  padding: 20px;
+ flex-direction: row;
+}
+
+.payment-box{
+  height:  100%;
+  width: 70%;
+  margin: 10px;
+  font-family: var(--primary-font-family);
+}
+
+.payment-form{
+  height: 85%;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  background-color: #161616;
+}
+
+.payment-form input, select {
+  height: 35px;
+  width: 100%;
+  color: #8b8b8b;
+  background-color: transparent;
+  margin: 0px 0px 20px 0px;
+  padding: 0 0 0 10px;
+}
+
+.payment-form input:focus{
+  border-bottom: 1px solid var(--secondary-background-color);
+  cursor: pointer;
+}
+
+#pay-now-btn {
+  background-color: #8b8b8b;
+  color: #e0e0e0;
+  width: 50%;
+  height: 2rem;
+  margin-top: 20px ;
+  padding: 1px;
+  border: none;
+  align-self: center;
+ }
+ 
+ #pay-now-btn:hover {
+   background-color: var(--primary-background-color);
+   cursor: pointer;
+ }
+
+ .payment-form label{
+  display: block;
+  margin: 10px;
+}
+
+
+/* Payment form bottom section */
+
+.exra-function{
+  height: 15%;
+  width: 100%;
+  flex-direction: row;
+  padding: 10px;
+  gap: 20%;
+  background-color: #161616;
+}
+
+.cart{
+  width: 30%;
+}
+
+.extra-btn{
+  flex-direction: row;
+  width: 50%;
+  gap: 5%;
+  z-index: 2;
+}
+
+.extra-feature-btn {
+  background-color: #8b8b8b;
+  color: #e0e0e0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 80%;
+  height: 2rem;
+  margin: 10px;
+  padding: 1px;
+  border: none;
+  align-self: center;
+ }
+ 
+ .extra-feature-btn:hover {
+   background-color: var(--primary-background-color);
+   cursor: pointer;
+ }
+
+
+/* heres the second div which wusing for place order */
+.place-order{
+  border: 1px solid white;
+  height:  100%;
+  margin: 10px;
+  width: 30%;
+}
+
+.ordering-card{
+  align-items: center;
+  padding: 20px;
+  height: 70%;
+} 
+
+.ordering-card .card-front{
+  height: 60%;
+}
+
+/* Ordering buttons */
+
+.cart-btn{
+  flex-direction: row;
+  margin: 20px;
+  z-index: 2;
+ 
+}
+
+.cart-btn .extra-feature-btn{
+  width: 2rem;
+  font-size: 20px;
+}
+
+.cart-btn :nth-child(2){
+  width: 5rem;
+}
+
+/* Card ordering section end here */
+
+/* Login Or Sign-UP section start here */
+
+.registration{
+ margin: 30px;
+}
+
+.forms{
+  height: 45rem;
+  flex-direction: row;
+  background: transparent;
+  top: 10%;
+  left: 35%;
+  position: absolute;
+  z-index: 1;
+}
+
+.sign-up{
+  background-color: #141414;
+  height: 40rem;
+  width: 30rem;
+  margin: 10px;
+  display: none;
+}
+
+.forms h2{
+  text-align: center;
+  margin: 10px;
+}
+
+.input-fields{
+  font-family: var(--primary-font-family);
+  padding: 20px;
+}
+
+.input-fields label{
+ display: block;
+ align-self: self-start;
+ margin-left: 10px;
+}
+
+.input-fields input {
+  height: 35px;
+  width: 100%;
+  color: #8b8b8b;
+  background-color: transparent;
+  margin: 0px 0px 20px 0px;
+  padding: 0 0 0 10px;
+}
+
+.input-fields input:focus{
+  border-bottom: 1px solid var(--secondary-background-color);
+  cursor: pointer;
+}
+
+#submit{
+  background-color: #8b8b8b;
+  color: #e0e0e0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 80%;
+  height: 2rem;
+  margin: 10px;
+  padding: 1px;
+  border: none;
+  align-self: center;
+ }
+ 
+ #submit:hover {
+   background-color: var(--primary-background-color);
+   cursor: pointer;
+ }
+
+.linker{
+  margin: 30px;
+}
+
+.linker span{
+  color: #7f50ff;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Sign-in section */
+
+.sign-in{
+  background-color: #141414;
+  height: 30rem;
+  width: 30rem;
+  margin: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.sign-in .input-fields{
+  margin-top: 20px;
+}
+
+/* Login Or Sign-UP section end here */
